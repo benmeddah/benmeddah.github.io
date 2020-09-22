@@ -1,1 +1,1 @@
-# https://benmeddah.github.io/
+# https://benmeddah.github.io/dir-vuetify/
