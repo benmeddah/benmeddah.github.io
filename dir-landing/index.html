@@ -5,53 +5,11 @@
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script
-			src="./Landing Page_files/alpine.min.js.téléchargement"
-			defer=""
-		></script>
-		<link rel="stylesheet" href="./Landing Page_files/compiled.css" />
+		<script src="./v1_files/alpine.min.js.téléchargement" defer=""></script>
+		<link rel="stylesheet" href="./v1_files/compiled.css" />
 		<title>Landing Page</title>
-		<script src="./Landing Page_files/includeAPI.js.téléchargement"></script
-		><script data-dapp-detection="">
-			!(function () {
-				let e = !1;
-				function n() {
-					if (!e) {
-						const n = document.createElement('meta');
-						(n.name = 'dapp-detected'), document.head.appendChild(n), (e = !0);
-					}
-				}
-				if (window.hasOwnProperty('ethereum')) {
-					if (
-						((window.__disableDappDetectionInsertion = !0),
-						void 0 === window.ethereum)
-					)
-						return;
-					n();
-				} else {
-					var t = window.ethereum;
-					Object.defineProperty(window, 'ethereum', {
-						configurable: !0,
-						enumerable: !1,
-						set: function (e) {
-							window.__disableDappDetectionInsertion || n(), (t = e);
-						},
-						get: function () {
-							if (!window.__disableDappDetectionInsertion) {
-								const e = arguments.callee;
-								(e &&
-									e.caller &&
-									e.caller.toString &&
-									-1 !== e.caller.toString().indexOf('getOwnPropertyNames')) ||
-									n();
-							}
-							return t;
-						},
-					});
-				}
-			})();
-		</script></head
-	>
+		<script src="./v1_files/includeAPI.js.téléchargement"></script>
+	</head>
 
 	<body>
 		<header class="back w-full bg-blue-900 bg-cover text-gray-100">
@@ -95,11 +53,7 @@
 						<div
 							class="card1 py-5 px-4 rounded w-full flex flex-col items-center"
 						>
-							<img
-								class="w-20 h-20"
-								src="./Landing Page_files/icon-1.png"
-								alt=""
-							/>
+							<img class="w-20 h-20" src="./v1_files/icon-1.png" alt="" />
 							<div class="my-5 title" x-text="title">Article Title</div>
 							<div class="subtitle" x-text="subtitle"
 								>Lorem ipsum dolor sit amet consectetur.</div
@@ -116,11 +70,7 @@
 						<div
 							class="card1 py-5 px-4 rounded w-full flex flex-col items-center"
 						>
-							<img
-								class="w-20 h-20"
-								src="./Landing Page_files/icon-1.png"
-								alt=""
-							/>
+							<img class="w-20 h-20" src="./v1_files/icon-1.png" alt="" />
 							<div class="my-5 title" x-text="title">Article Title</div>
 							<div class="subtitle" x-text="subtitle"
 								>Lorem ipsum dolor sit amet consectetur.</div
@@ -137,11 +87,7 @@
 						<div
 							class="card1 py-5 px-4 rounded w-full flex flex-col items-center"
 						>
-							<img
-								class="w-20 h-20"
-								src="./Landing Page_files/icon-1.png"
-								alt=""
-							/>
+							<img class="w-20 h-20" src="./v1_files/icon-1.png" alt="" />
 							<div class="my-5 title" x-text="title">Article Title</div>
 							<div class="subtitle" x-text="subtitle"
 								>Lorem ipsum dolor sit amet consectetur.</div
@@ -174,17 +120,122 @@
 			</section>
 
 			<section class="w-full p-6">
-				<div class="maxify p-6 border border-gray-300 rounded">
+				<div
+					x-data="{subtitle:&#39;Lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque deleniti ea laboriosam! ipsum dolor sit amet consectetur, adipisicing elit. Eaque deleniti ea laboriosam!&#39;}"
+					class="maxify p-6 border border-gray-300 rounded"
+				>
 					<div
 						class="leading-loose text-gray-600 font-bold text-xl tracking-wide"
 					>
-						You Do Creative, We’ll Do the Rest.
+						You Do Creative.
 					</div>
 					<div
+						x-text="subtitle"
 						class="
 							text-justify text-gray-400 text-sm
 							font-medium
 							tracking-tight
+							leading-loose
+						"
+						>Lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+						Eaque deleniti ea laboriosam! ipsum dolor sit amet consectetur,
+						adipisicing elit. Eaque deleniti ea laboriosam!</div
+					>
+				</div>
+			</section>
+
+			<section class="w-full px-6">
+				<div class="maxify flex flex-col md:flex-row">
+					<div class="w-full md:w-1/2 md:pr-4">
+						<img
+							class="bg-gray-800 w-full h-36"
+							src="http://127.0.0.1:5500/"
+							alt=""
+						/>
+					</div>
+					<div class="w-full md:w-1/2 md:pl-4 my-4 md:my-0">
+						<div
+							x-data="{subtitle:&#39;Lorem ipsum dolor sit amet consectetur, adipisicing elit.&#39;}"
+							class="p-6 border border-gray-300 rounded"
+						>
+							<div
+								class="
+									leading-loose
+									text-gray-600
+									font-bold
+									text-xl
+									tracking-wide
+								"
+							>
+								You Do Creative.
+							</div>
+							<div
+								x-text="subtitle"
+								class="
+									text-justify text-gray-400 text-sm
+									font-medium
+									tracking-tight
+									leading-loose
+								"
+								>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div
+							>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="w-full mt-6 px-6">
+				<div class="maxify flex flex-col md:flex-row-reverse">
+					<div class="w-full md:w-1/2 md:pl-4 my-4 md:my-0">
+						<img
+							class="bg-gray-800 w-full h-36"
+							src="http://127.0.0.1:5500/"
+							alt=""
+						/>
+					</div>
+					<div class="w-full md:w-1/2 md:pr-4">
+						<div
+							x-data="{subtitle:&#39;Lorem ipsum dolor sit amet consectetur, adipisicing elit.&#39;}"
+							class="p-6 border border-gray-300 rounded"
+						>
+							<div
+								class="
+									leading-loose
+									text-gray-600
+									font-bold
+									text-xl
+									tracking-wide
+								"
+							>
+								You Do Creative.
+							</div>
+							<div
+								x-text="subtitle"
+								class="
+									text-justify text-gray-400 text-sm
+									font-medium
+									tracking-tight
+									leading-loose
+								"
+								>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div
+							>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="w-full bg-indigo-700 bg-opacity-70 mt-4">
+				<div class="maxify p-6 text-center">
+					<div class="text-gray-600 font-bold text-xl tracking-wide">
+						You Do Creative, We’ll Do the Rest.
+					</div>
+					<div
+						class="
+							text-gray-900 text-sm
+							font-medium
+							tracking-tight
+							pt-4
+							px-4
 							leading-loose
 						"
 					>
@@ -195,7 +246,6 @@
 				</div>
 			</section>
 		</main>
-
 		<script>
 			includeHTML();
 		</script>
