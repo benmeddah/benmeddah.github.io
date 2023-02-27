@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>@BENMEDDAH</title>
+	</head>
+	<body>
+		<header>
+			<h1>BENMEDDAH Mohamed</h1>
+		</header>
+		<main>
+			<p>description</p>
+			<ul>
+				<li>
+					<a href="https://blitoh-todoapp.herokuapp.com/">Nuxt Project</a><br />
+					<a href="https://github.com/benmeddah/nuxt-todoapp">Source Code</a>
+				</li>
+
+				<li>
+					<a href="/dir-tailwind/">TailWindCss Challenge</a><br />
+					<a href="/dir-tailwind/mySolution.html">My Solution Challenge</a
+					><br />
+					<a href="https://github.com/benmeddah/tailwind-challenge"
+						>Source Code</a
+					>
+				</li>
+				<li> <a href="/dist/">Mahmoud</a><br /> </li>
+				<li> <a href="/dir-landing/">Landing Page</a><br /> </li>
+				<li>
+					<a href="/dir-css/">CSS Basics</a><br />
+					<a href="https://github.com/benmeddah/css-basics">Source Code</a>
+				</li>
+				<li>
+					<a href="https://github.com/benmeddah/vulnersify">Vulnersify Script</a
+					><br />
+				</li>
+			</ul>
+		</main>
+		<br />
+		<footer>footer</footer>
+	</body>
+</html>
